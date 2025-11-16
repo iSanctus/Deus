@@ -12,6 +12,7 @@ import net.sf.l2j.commons.pool.ConnectionPool;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.communitybbs.manager.BaseBBSManager;
 import net.sf.l2j.gameserver.communitybbs.manager.ClanBBSManager;
+import net.sf.l2j.gameserver.communitybbs.manager.CustomBBSManager;
 import net.sf.l2j.gameserver.communitybbs.manager.FavoriteBBSManager;
 import net.sf.l2j.gameserver.communitybbs.manager.FriendsBBSManager;
 import net.sf.l2j.gameserver.communitybbs.manager.MailBBSManager;
@@ -103,6 +104,8 @@ public class CommunityBoard
 		
 		if (command.startsWith("_bbshome"))
 			TopBBSManager.getInstance().parseCmd(command, player);
+		else if (command.startsWith("_bbscustom"))
+			CustomBBSManager.getInstance().parseCmd(command, player);
 		else if (command.startsWith("_bbsgetfav"))
 			FavoriteBBSManager.getInstance().parseCmd(command, player);
 		else if (command.startsWith("_bbsloc"))
