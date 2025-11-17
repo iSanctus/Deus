@@ -1,8 +1,10 @@
-<html><body><center>
-<img src="L2UI.SquareGray" width=610 height=1><br>
+<html><body>
+<br>
+<center>
 <table width=610>
-<tr>
-<td width=145 valign=top>
+<tr><td>
+<table><tr><td>
+<!-- LEFT SIDEBAR -->
 <table width=145>
 <tr><td height=10></td></tr>
 <tr><td align=center><img src="l2ui.bbs_lineage2" width=128 height=16></td></tr>
@@ -10,85 +12,433 @@
 <tr><td align=center><img src="L2UI.SquareGray" width=130 height=1></td></tr>
 <tr><td height=3></td></tr>
 <tr><td align=center><img src="L2UI.SquareGray" width=100 height=1></td></tr>
-<tr><td height=10></td></tr>
-<tr><td align=center><button value="MAIN" action="bypass _bbscustom;main" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=12></td></tr>
+<tr><td align=center><button value="Home" action="bypass _bbscustom" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
 <tr><td height=4></td></tr>
-<tr><td align=center><button value="SHOP" action="bypass _bbscustom;shop" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td align=center><button value="Shop" action="bypass _bbscustom;shop" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
 <tr><td height=4></td></tr>
-<tr><td align=center><button value="GATEKEEPER" action="bypass _bbscustom;gatekeeper" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td align=center><button value="Teleport" action="bypass _bbscustom;gatekeeper" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
 <tr><td height=4></td></tr>
-<tr><td align=center><button value="BUFFER" action="bypass _bbscustom;buffer" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td align=center><button value="Buffer" action="bypass _bbscustom;buffer" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
 <tr><td height=4></td></tr>
-<tr><td align=center><button value="SERVICES" action="bypass _bbscustom;services" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td align=center><button value="Services" action="bypass _bbscustom;services" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
 <tr><td height=4></td></tr>
-<tr><td align=center><button value="CABINET" action="bypass _bbscustom;cabinet" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
-<tr><td height=15></td></tr>
+<tr><td align=center><button value="Cabinet" action="bypass _bbscustom;cabinet" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=12></td></tr>
 <tr><td align=center><img src="L2UI.SquareGray" width=100 height=1></td></tr>
 <tr><td height=3></td></tr>
 <tr><td align=center><img src="L2UI.SquareGray" width=130 height=1></td></tr>
 </table>
-</td>
-<td width=5></td>
-<td width=460 valign=top>
-<img height=10><br>
-<img src="L2UI.SquareWhite" width=450 height=1><br>
+<br>
+</td><td>
+<!-- MAIN CONTENT -->
 <table width=450 bgcolor=000000>
+<tr><td height=4></td></tr>
+<tr><td width=10></td><td>
+<center>
+<table width=430>
 <tr><td height=15></td></tr>
-<tr><td align=center><font color="LEVEL" name="hs12">Buffer Service</font></td></tr>
-<tr><td height=10></td></tr>
-<tr><td align=center><font color="999999">Enhance your character with powerful buffs</font></td></tr>
+<tr><td align=center><font color=LEVEL name="hs12">Buffer Service</font></td></tr>
 <tr><td height=15></td></tr>
 </table>
-<img src="L2UI.SquareWhite" width=450 height=1><br>
+<img src="L2UI.SquareWhite" width=430 height=1><br>
 <img height=10><br>
-<table width=450 bgcolor=000000>
-<tr><td height=10></td></tr>
+<!-- QUICK BUFF SETS -->
+<table width=430>
+<tr>
+<td width=215 align=center>
+<button value="Full Fighter Buffs" action="bypass _bbsbuff;fighter" width=205 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td width=215 align=center>
+<button value="Full Mage Buffs" action="bypass _bbsbuff;mage" width=205 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<button value="Remove All Buffs" action="bypass _bbsbuff;removeall" width=205 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td align=center>
+<button value="Heal & MP" action="bypass _bbsbuff;heal" width=205 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+</tr>
+</table>
+<br>
+<img src="L2UI.SquareWhite" width=430 height=1><br>
+<img height=10><br>
+<!-- FIGHTER BUFFS -->
+<table width=430>
 <tr><td align=center><font color=LEVEL>Fighter Buffs</font></td></tr>
-<tr><td height=10></td></tr>
-<tr><td><table width=450><tr>
-<td width=150><button value="Might" action="bypass _bbsbuff;might" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td width=150><button value="Shield" action="bypass _bbsbuff;shield" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td width=150><button value="Haste" action="bypass _bbsbuff;haste" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-</tr>
-<tr><td height=4></td></tr>
+<tr><td height=8></td></tr>
+<tr><td>
+<table width=430>
 <tr>
-<td><button value="Wind Walk" action="bypass _bbsbuff;windwalk" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td><button value="Focus" action="bypass _bbsbuff;focus" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td><button value="Death Whisper" action="bypass _bbsbuff;deathwhisper" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-</tr></table></td></tr>
-<tr><td height=10></td></tr>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1068" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Might" action="bypass _bbsbuff;might" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
 </table>
-<img src="L2UI.SquareWhite" width=450 height=1><br>
-<img height=10><br>
-<table width=450 bgcolor=000000>
-<tr><td height=10></td></tr>
-<tr><td align=center><font color=LEVEL>Mage Buffs</font></td></tr>
-<tr><td height=10></td></tr>
-<tr><td><table width=450><tr>
-<td width=150><button value="Acumen" action="bypass _bbsbuff;acumen" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td width=150><button value="Concentration" action="bypass _bbsbuff;concentration" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td width=150><button value="Empower" action="bypass _bbsbuff;empower" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
+</td>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1040" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Shield" action="bypass _bbsbuff;shield" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1204" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Wind Walk" action="bypass _bbsbuff;windwalk" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
 </tr>
-<tr><td height=4></td></tr>
+<tr><td height=5></td></tr>
 <tr>
-<td><button value="Clarity" action="bypass _bbsbuff;clarity" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td><button value="Wild Magic" action="bypass _bbsbuff;wildmagic" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td><button value="Bless Soul" action="bypass _bbsbuff;blesssoul" width=140 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-</tr></table></td></tr>
-<tr><td height=10></td></tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1086" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Haste" action="bypass _bbsbuff;haste" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
 </table>
-<img src="L2UI.SquareWhite" width=450 height=1><br>
-<img height=10><br>
-<table width=450 bgcolor=000000>
-<tr><td height=10></td></tr>
-<tr><td align=center><table width=420><tr>
-<td width=210 align=center><button value="Full Buffs" action="bypass _bbsbuff;fullbuffs" width=190 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-<td width=210 align=center><button value="Remove Buffs" action="bypass _bbsbuff;removebuffs" width=190 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
-</tr></table></td></tr>
-<tr><td height=10></td></tr>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1045" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Acumen" action="bypass _bbsbuff;acumen" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
 </table>
-<img src="L2UI.SquareWhite" width=450 height=1>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1243" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Bless Shield" action="bypass _bbsbuff;blessshield" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1077" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Focus" action="bypass _bbsbuff;focus" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1036" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Magic Barrier" action="bypass _bbsbuff;magicbarrier" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1242" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Death Whisper" action="bypass _bbsbuff;deathwhisper" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1044" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Regeneration" action="bypass _bbsbuff;regeneration" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1048" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Empower" action="bypass _bbsbuff;empower" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1062" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Berserker" action="bypass _bbsbuff;berserker" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1059" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Agility" action="bypass _bbsbuff;agility" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1303" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Wild Magic" action="bypass _bbsbuff;wildmagic" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1240" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Guidance" action="bypass _bbsbuff;guidance" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
 </td>
 </tr>
 </table>
-</center></body></html>
+</td></tr>
+</table>
+<br>
+<img src="L2UI.SquareWhite" width=430 height=1><br>
+<img height=10><br>
+<!-- MAGE BUFFS -->
+<table width=430>
+<tr><td align=center><font color=LEVEL>Mage Buffs</font></td></tr>
+<tr><td height=8></td></tr>
+<tr><td>
+<table width=430>
+<tr>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1085" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Acumen" action="bypass _bbsbuff;acumen" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1078" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Concentration" action="bypass _bbsbuff;concentration" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td width=143 align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1059" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Agility" action="bypass _bbsbuff;agility" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1059" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Empower" action="bypass _bbsbuff;empower" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1397" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Clarity" action="bypass _bbsbuff;clarity" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1304" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Wild Magic" action="bypass _bbsbuff;wildmagic" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1032" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Bless Soul" action="bypass _bbsbuff;blesssoul" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1040" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Shield" action="bypass _bbsbuff;shield" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1204" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Wind Walk" action="bypass _bbsbuff;windwalk" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1036" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Magic Barrier" action="bypass _bbsbuff;magicbarrier" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1044" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Regeneration" action="bypass _bbsbuff;regeneration" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1087" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Mental Shield" action="bypass _bbsbuff;mentalshield" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+<tr><td height=5></td></tr>
+<tr>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1259" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Resist Holy" action="bypass _bbsbuff;resistholy" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1352" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Elemental Prot" action="bypass _bbsbuff;elementalprotection" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+<td align=center>
+<table width=135 bgcolor=222222>
+<tr><td height=5></td></tr>
+<tr><td align=center><img src="icon.skill1392" width=32 height=32></td></tr>
+<tr><td height=3></td></tr>
+<tr><td align=center><button value="Holy Resist" action="bypass _bbsbuff;holyresist" width=120 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td></tr>
+<tr><td height=5></td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<img src="L2UI.SquareWhite" width=430 height=1><br>
+<img height=10><br>
+<!-- REMOVE BUFFS SECTION -->
+<table width=430>
+<tr><td align=center><font color=LEVEL>Remove Individual Buffs</font></td></tr>
+<tr><td height=8></td></tr>
+<tr><td>
+<table width=430>
+<tr>
+<td width=143 align=center>
+<button value="Remove Might" action="bypass _bbsbuff;remove;might" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td width=143 align=center>
+<button value="Remove Shield" action="bypass _bbsbuff;remove;shield" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td width=143 align=center>
+<button value="Remove Haste" action="bypass _bbsbuff;remove;haste" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+</tr>
+<tr><td height=3></td></tr>
+<tr>
+<td align=center>
+<button value="Remove Acumen" action="bypass _bbsbuff;remove;acumen" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td align=center>
+<button value="Remove Focus" action="bypass _bbsbuff;remove;focus" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td align=center>
+<button value="Remove Empower" action="bypass _bbsbuff;remove;empower" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+</tr>
+<tr><td height=3></td></tr>
+<tr>
+<td align=center>
+<button value="Remove Wind Walk" action="bypass _bbsbuff;remove;windwalk" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td align=center>
+<button value="Remove Berserker" action="bypass _bbsbuff;remove;berserker" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+<td align=center>
+<button value="Remove D.Whisper" action="bypass _bbsbuff;remove;deathwhisper" width=135 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal">
+</td>
+</tr>
+</table>
+</td></tr>
+<tr><td height=10></td></tr>
+</table>
+<img src="L2UI.SquareWhite" width=430 height=1>
+</center>
+</td></tr>
+</table>
+</td></tr></table>
+</td></tr>
+</table>
+</center>
+</body></html>
